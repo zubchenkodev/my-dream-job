@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+      @apply box-border list-none p-0 m-0 scroll-smooth;
+    }
+    body {
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+@layer utilities {
+   
+}
+
+@layer components {
+    .main-button {
+        @apply bg-accent text-white rounded-full px-6 py-3 uppercase text-sm;
+    }
+    /* form */
+    .mdjLabel {
+        @apply text-fontDark font-normal text-sm py-1 ;
+    }
+    .mdjLabelAlt {
+        @apply text-fontDark font-normal text-[14px];
+    }
+    .mdjInput {
+        @apply bg-bgInput text-fontDark input input-sm;
+    }
+    .mdjSelect {
+        @apply bg-bgInput text-fontDark select select-sm;
+    }
+    .mdjCheckbox {
+        @apply toggle toggle-xs border-borderDark bg-borderDark;
+    }
+    .mdjTextarea {
+        @apply textarea textarea-bordered textarea-sm bg-bgInput text-fontDark;
+    }
+    .mdjFormControl {
+        @apply flex flex-col;
+    }
+    .mdjFormControlHorizontal {
+        @apply flex gap-4 items-center;
+    }
+    /* buttons */
+    .mdjButtonPrimary {
+        @apply bg-bgButtonPrimary border-none text-white px-4 font-medium rounded-lg flex justify-center items-center h-8 hover:bg-bgButtonPrimaryHover alata-regular
+    }
+    .mdjButtonSecondary {
+        @apply bg-transparent border border-borderDark text-fontDark px-4 font-medium rounded-lg flex justify-center items-center h-8 hover:bg-borderDark hover:text-white alata-regular
+    }
+    .mdjTabButton {
+        @apply bg-transparent text-fontDark px-4 font-medium flex justify-center items-center h-8 border-b-4 border-transparent alata-regular;
+    }
+    .mdjTabButtonActive {
+        @apply border-b-4 border-bgButtonPrimary alata-regular;
+    }
+    .mdjBadge {
+        @apply bg-bgBadge text-fontDark py-1 px-3 rounded-full textSm
+    }
+    .mdjLink {
+        @apply font-bold text-borderDark alata-regular;
+    }
+    .mdjNavLink {
+        @apply flex gap-4 items-center p-4 text-fontDark hover:border-fontDark hover:border-r-4 hover:pl-8 alata-regular;
+        transition: padding-left 0.3s ease;
+    }
+    .mdjNavLink.active {
+        @apply border-fontDark border-r-4 font-bold
+    }
+    
+    .mdjNavLinkBottom {
+        @apply text-borderLight flex flex-col gap-2 items-center;
+    }
+    
+    /* typografy */
+    .alata-regular {
+        font-family: "Alata", sans-serif;
+    }
+    .h1 {
+        @apply text-3xl lg:text-[40px] font-bold alata-regular
+    }
+    .h2 {
+        @apply text-2xl font-bold alata-regular
+    }
+    .h3 {
+        @apply text-xl font-bold alata-regular
+    }
+    .textSm {
+        @apply text-sm font-light
+    }
+
+
+
+}
+
+
+.shadowMedium {
+    box-shadow: 0 4px 8px rgba(19,41,104,.1);
+}
+
