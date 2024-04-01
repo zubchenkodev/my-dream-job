@@ -3,7 +3,7 @@ import { Bottombar, Sidebar, Topbar} from "../../components"
 
 const RootLayout = () => {
   return (
-    <div className="w-full">
+    <div className="w-screen">
       <Topbar/>
       <div className="lg:container lg:grid grid-cols-[300px,1fr] h-screen lg:px-8 mx-auto">
         <Sidebar/>

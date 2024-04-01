@@ -18,7 +18,7 @@ const Topbar = () => {
   }
 
   return (
-    <section className="sticky top-0 z-50 lg:hidden w-full bg-fontDark">
+    <section className="sticky top-0 z-50 lg:hidden w-screen bg-fontDark">
       <div className="flex items-center justify-between p-4">
         <Link to="/" className="flex gap-3 items-center">
           <img src="./assets/icons/logo-no-background.svg" alt="Logo" className="w-[150px] sm:w-[250px]" />
